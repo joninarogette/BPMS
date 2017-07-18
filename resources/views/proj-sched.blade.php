@@ -1,7 +1,12 @@
 @extends('layouts.admin')
 
-@section('content')
+@section('page_title')
 
+Project Scheduling
+
+@endsection
+
+@section('content')
 <form class="" action="index.html" method="post">
 	<!-- Basic Examples -->
 						<div class="row clearfix">
@@ -9,7 +14,7 @@
 										<div class="card">
 												<div class="header">
 														<h2>
-																SELECT CLIENT
+																<strong>SELECT CLIENT</strong>
 														</h2>
 												</div>
 												<div class="body">
@@ -78,7 +83,7 @@
 												</div>
 												<div class="header">
 														<h2>
-																SELECT ACCOUNTING TEAM
+																<strong>SELECT EMPLOYEE</strong>
 														</h2>
 												</div>
 												<div class="body">
@@ -86,44 +91,48 @@
 																<table class="table table-bordered table-striped table-hover js-basic-example dataTable">
 																		<thead>
 																				<tr>
-																						<th>Team ID</th>
-																						<th>Leader</th>
+																						<th>Employee Name</th>
 																						<th>Status</th>
 																						<th>Action</th>
+																						<th>Deadline</th>
 																				</tr>
 																		</thead>
 																		<tbody>
 																				<tr>
-																						<td>Team0001</td>
 																						<td>Jonina Fontanilla</td>
-																						<td><h5><span class="label label-primary">Available</span></h5></td>
+																						<td>Available</td>
 																						<td><input name="group2" type="radio" id="radio_1" class="radio-col-green" /><label for="radio_1">SELECT</label></td>
+																						<td>18/07/2017</td>
+																				</tr><tr>
+																						<td>Jonina Fontanilla</td>
+																						<td>Available</td>
+																						<td><input name="group2" type="radio" id="radio_1" class="radio-col-green" /><label for="radio_1">SELECT</label></td>
+																						<td>18/07/2017</td>
 																				</tr>
 																				<tr>
-																						<td>Team0002</td>
-																						<td>Shaira Dela Cruz</td>
-																						<td><h5><span class="label label-danger">Working</span></h5></td>
-																						<td><input name="group2" type="radio" id="radio_2" class="radio-col-green" /><label for="radio_2">SELECT</label></td>
+																						<td>Jonina Fontanilla</td>
+																						<td>Available</td>
+																						<td><input name="group2" type="radio" id="radio_1" class="radio-col-green" /><label for="radio_1">SELECT</label></td>
+																						<td>18/07/2017</td>
 																				</tr>
 																				<tr>
-																						<td>Team0003</td>
-																						<td>Mark Zuckerberg</td>
-																						<td><h5><span class="label label-danger">Working</span></h5></td>
-																						<td><input name="group2" type="radio" id="radio_3" class="radio-col-green" /><label for="radio_3">SELECT</label></td>
+																						<td>Jonina Fontanilla</td>
+																						<td>Available</td>
+																						<td><input name="group2" type="radio" id="radio_1" class="radio-col-green" /><label for="radio_1">SELECT</label></td>
+																						<td>18/07/2017</td>
 																				</tr>
 																				<tr>
-																						<td>Team0004</td>
-																						<td>Bill Gates</td>
-																						<td><h5><span class="label label-primary">Available</span></h5></td>
-																						<td><input name="group2" type="radio" id="radio_4" class="radio-col-green" /><label for="radio_4">SELECT</label></td>
+																						<td>Jonina Fontanilla</td>
+																						<td>Available</td>
+																						<td><input name="group2" type="radio" id="radio_1" class="radio-col-green" /><label for="radio_1">SELECT</label></td>
+																						<td>18/07/2017</td>
 																				</tr>
 																				<tr>
-																						<td>Team0005</td>
-																						<td>Henry Sy</td>
-																						<td><h5><span class="label label-primary">Available</span></h5></td>
-																						<td><input name="group2" type="radio" id="radio_5" class="radio-col-green" /><label for="radio_5">SELECT</label></td>
+																						<td>Jonina Fontanilla</td>
+																						<td>Available</td>
+																						<td><input name="group2" type="radio" id="radio_1" class="radio-col-green" /><label for="radio_1">SELECT</label></td>
+																						<td>18/07/2017</td>
 																				</tr>
-
 																		</tbody>
 																</table>
 														</div>

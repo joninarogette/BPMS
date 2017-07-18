@@ -51,12 +51,12 @@
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
-    <!-- Top Bar -->
 
-          <nav class="navbar" >
+    <!-- Top Bar -->
+        <nav class="navbar" >
         <div class="container-fluid">
             <div class="navbar-header">
-                <!--<img src="{{asset('images/icon.png')}}" alt="User Image" height="80" width="500px">-->
+                <img src="{{asset('images/icon.png')}}" alt="User Image" height="55" width="450px">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
             </div>
@@ -71,14 +71,14 @@
 
     <!-- #Top Bar -->
     <section>
-      <!-- #User Info -->
+
         <!-- Left Sidebar -->
       <aside id="leftsidebar" class="sidebar" >
 
           <!-- User Info -->
            <div class="user-info" style="text-align: center">
                 <div class="image">
-                    <img src="{{asset('images/user.png')}}" alt="User Image" height="50" width="50px" />
+                   <img src="{{asset('images/user.png')}}" alt="User Image" height="50" width="50px" />
                 </div>
                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} </div>
                    <div class="email"> {{ Auth::user()->email }}</div>
@@ -86,20 +86,15 @@
 
       <!-- Menu -->
       <div class="menu">
-    <!--  <ul class="list">
-        <li class="header">Accountant</li>-->
-
-                    <div class="menu">
-                        <ul class="list">
-                            <li class="header">ACCOUNTANT</li>
-
+          <ul class="list">
+              <li class="header">BOOKKEEPING</li>
 
         <li>
           <a href="/ames/public/admin">
           <i class="material-icons">home</i>
               <span>Home</span></a>
           </li>
-          <a href=""javascript:void(0);" class="menu-toggle"">
+          <a href="javascript:void(0);" class="menu-toggle">
             <i class="material-icons">format_list_numbered</i>
             <span>Accounting</span>
         </a>
@@ -181,35 +176,34 @@
         </a>
     </li>
 
-    <li class="header">ADMIN</li>
-    <li>
-        <a href="javascript:void(0);" class="menu-toggle">
-            <i class="material-icons">assessment</i>
-                <span>Logbook</span>
-        </a>
-    </li>
-
+    <li class="header">PROJECT MONITORING</li>
     <li>
       <a href="javascript:void(0);" class="menu-toggle">
       <i class="material-icons">account_circle</i>
-          <span>Users</span>
+          <span>Registration and Profiling</span>
       </a>
         <ul class="ml-menu">
             <li>
-                <a href="{{route('admin.users.index')}}">Users</a>
+                <a href="{{route('admin.users.index')}}">Employees</a>
             </li>
             <li>
-                <a href="../admin/users-privileges.html">Privileges</a>
+                <a href="../admin/users-privileges.html">Clients</a>
             </li>
         </ul>
     </li>
 
-    <li>
-        <a href="{{route('admin.clients.index')}}">
-            <i class="material-icons">group</i>
-            <span>Clients</span>
-        </a>
-    </li>
+        <li>
+          <a href="javascript:void(0);">
+          <i class="material-icons">assessment</i>
+              <span>Logbook</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);">
+          <i class="material-icons">account_circle</i>
+              <span>Client Assigning and Project Scheduling</span>
+          </a>
+        </li>
 
     <li>
         <a href="javascript:void(0);" class="menu-toggle">

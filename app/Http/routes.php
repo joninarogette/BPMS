@@ -51,8 +51,8 @@ Route::group(['middleware'=>'auth'], function(){
 
 Route::get('/logbook', 'test@index');
 
-Route::get('/regi', 'UIController@sample');
+Route::get('/documents-log', 'UIController@sample');
 
-Route::get('/pm', function () {
-    return view('pm');
+Route::get('/project-scheduling', function () {
+    return view('proj-sched');
 });

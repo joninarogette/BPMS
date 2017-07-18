@@ -15,6 +15,6 @@ class UIController extends Controller
      */
     public function sample()
     {
-      return view('regi');
+      return view('documents-log');
     }
 }
